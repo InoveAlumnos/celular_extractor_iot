@@ -1,16 +1,24 @@
 '''
-API Machine Learning
+API Python IoT
 ---------------------------
 Autor: Inove Coding School
 Version: 1.0
  
 Descripcion:
-Se utiliza Flask para crear un WebServer que levanta un
-modelo de inteligencia artificial con machine learning
-y realizar predicciones o clasificaciones
+Se utiliza Flask para crear un generador de datos
+de telemetría de un celular (extractor):
+- Compass
+- GPS
+- Linterna ON/OFF
+- Acelerómetro
+- Giróscopo
 
 Ejecución: Lanzar el programa y abrir en un navegador la siguiente dirección URL
-http://127.0.0.1:5000/
+https://IP:50005/
+
+Debe conectarse con su celular conociendo la IP de la máquina que levanta el server
+
+NOTA: No olvide usar HTTPS en la URL
 
 '''
 
