@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Inove App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+  <script src="https://kit.fontawesome.com/d604a8edc1.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+
+  <div class="contenedor" id="container">
+    <header>
+      <div>
+      </div>
+      <h1><a title="inove website" href="https://inove.com.ar/">
+          <img class="inovelogo" src="{{url_for('static', filename='media/cropped-3-1-300x131.png')}}" /></a>
+          Celular Extractor
+          <span style="font-size: 80%; color:  hsl(123, 99%, 44%);">
+          </span><img class="pythonlogo" src="{{url_for('static', filename='media/python-5.svg')}}" /></h1>
+      <div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div id="console"></div>
+      <button id="switch" class="btn btn-primary btn-block btn-large">Linterna On / Off</button>
+      <h3 id="doTiltLR"></h3>
+      <h3 id="doTiltFB"></h3>
+      <h3 id="doDirection"></h3>
+      <div id="logoContainer">
+        <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" id="imgLogo" width="300">
+      </div>
+      <h3 id="accelerometer"></h3>
+      <h3 id="gps"></h3>
+      <h3 id="heading"></h3>
+    </section>
+
+    <footer class="pie">
+      <p><span style="font-size: 100%; color:  hsl(194, 99%, 44%);">
+      <i class="fas fa-university"></span></i></span>
+              http://info@inove.com.ar
+      <span style="font-size: 100%; color:  orange;">
+        <i class="fas fa-mobile-alt"></i></span> Tel.: +54 9 11 2154-4777</p>
+    </footer>
+  </div>
+
+  <!-- Javascript scripts-->
+  <script type="text/javascript" src="../static/js/script.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
