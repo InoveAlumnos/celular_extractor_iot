@@ -36,17 +36,6 @@ $ mosquitto_pub -t "/sensores/celular/light" -m 1
 ```
 
 # Instalación y pruebas 🔧⚙️
-Descargue el repositorio en su pc, luego lanzar el servicio de Docker con el siguiente comando:
-```
-docker build -t inove_chatbot .
-docker run -d -p 8051:5000 -v $(pwd)/model:/opt/bot/model inove_chatbot
-```
-Or desde el docker-compose
-```
-docker-compose build
-docker-compose up
-```
-
 Una vez levantado el server, ingresar con su celular a la página. Deberá conocer la IP del servidor en su red local para poder ingresar:
 ```ssh
 https://<ip_host_flask>:5005
